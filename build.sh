@@ -18,7 +18,7 @@ case $input in
         ;;
 esac
 
-for branch in $(git branch);
-do
-    git log --oneline $branch ^remotes/origin/master;
-done
+demo=$(git branch-a | grep -piv 'xxxx')
+echo "是否收到"
+
+echo "$demo"

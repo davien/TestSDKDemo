@@ -16,9 +16,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor redColor];
+    self.view.backgroundColor = [UIColor orangeColor];
     // Do any additional setup after loading the view.
     [TestA log];
+    
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
+    label.text = @"test";
+    label.textColor = [UIColor blueColor];
+    [self.view addSubview:label];
+    
 }
 
 
